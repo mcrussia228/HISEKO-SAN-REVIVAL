@@ -25,10 +25,10 @@ img {
 }
 
 body {
-    min-width: 1200px;
     font-family: 'Montserrat';
     background-color: #001220;
     background-image: url(../img/footer.svg);
+    background-repeat: repeat-x;
 }
 
 .container {
@@ -64,13 +64,14 @@ ul.nav-list li{
 
 .nav-list{
     align-items: center;
+    margin-top: 10%;
 }
 
 .nav-list-item{
     margin: 20px;
     padding: 15px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background: #9f2871;
+    background: #1d96d1;
     color:azure;
     font-size: 20px;
     transition: 0.5s;
@@ -78,18 +79,20 @@ ul.nav-list li{
 
 .nav-list-item:hover{
     box-shadow: #001220;
-    border-radius:74% 26% 83% 17% / 18% 65% 35% 82%  ;
+    background: #1a6da3;
+    border-radius:74% 26% 83% 17% / 18% 65% 35% 82%;
+    font-size: x-large;
 }
 
 .header-logo{
-     margin-right: auto;
+    margin-right: auto;
 }
 
 .header-logo{
+    background-clip: text;
+    background: radial-gradient(circle at 70% , #04244a, #05274e, #093059, #0e3e6a00, #144e7f, #186297, #1c78b0, #1d8ec8, #1da2de, #1db2ef, #1cc0fb00, #1cc2ff00), url(/img/mpav_logo.jpg);
     color: transparent; 
     -webkit-background-clip: text;
-    background-clip: text;
-	background-image: url(../img/blurry-gradient-haikei.svg);
 }
 
 .header-logo h2 {
