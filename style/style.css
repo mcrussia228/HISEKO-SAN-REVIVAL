@@ -1,0 +1,99 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+::selection {
+background: #c62368; /* Safari */
+}
+::-moz-selection {
+background: #0afdf1; /* Firefox */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'Montserrat';
+    background-color: #001220;
+    background-image: url(../img/footer.svg);
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*отменяет маркеры*/
+}
+
+.btn-reset {
+   padding: 0;
+   border: none;
+   background-color: transparent; 
+}
+
+.flex {
+    display: flex;
+}
+
+#header{
+    display: flex;
+}
+
+ul.nav-list li{
+    display: inline;
+    
+}
+
+.nav-list{
+    align-items: center;
+}
+
+.nav-list-item{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background: #9f2871;
+    color:azure;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.nav-list-item:hover{
+    box-shadow: #001220;
+    border-radius:74% 26% 83% 17% / 18% 65% 35% 82%  ;
+}
+
+.header-logo{
+     margin-right: auto;
+}
+
+.header-logo{
+    color: transparent; 
+    -webkit-background-clip: text;
+    background-clip: text;
+	background-image: url(../img/blurry-gradient-haikei.svg);
+}
+
+.header-logo h2 {
+    font-size: 60px;
+}
+
+
