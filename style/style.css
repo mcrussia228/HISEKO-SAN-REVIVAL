@@ -9,7 +9,7 @@ html {
 }
 
 ::selection {
-background: #c62368; /* Safari */
+background: #08e2ff; /* Safari */
 }
 ::-moz-selection {
 background: #0afdf1; /* Firefox */
@@ -20,21 +20,20 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    padding-left: 0; /* Сдвигаем список влево */
+   }
+
 img {
     max-width: 100%;
 }
 
 body {
-    font-family: 'Montserrat';
-    background-color: #001220;
-    background-image: url(../img/footer.svg);
-    background-repeat: repeat-x;
-}
-
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
+    min-width: 1200px;
+    font-family: 'DotGothic16';
 }
 
 .list-reset {
@@ -53,50 +52,303 @@ body {
     display: flex;
 }
 
-#header{
-    display: flex;
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
 }
 
-ul.nav-list li{
-    display: inline;
+/* ---------ANIMATE-FON---------- */
+body {
+	background: linear-gradient(90deg, #020c3c, #2d027e, #51015c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* ---------ANIMATE-FON---------- */
+
+
+
+
+/*-----------header-------------*/
+.nav{
+    display: flex;
+}
+.nav-menu{
+    display: inline-flex;
+}
+a.nav-text{
+    margin: 15px;
+    font-size: 1.5rem;
+}
+
+.nav-logo{
+     margin-right: auto;
+}
+/*-----------header-------------*/
+
+
+/* -----------HERO-------- */
+.hero {
+    padding: 100px 0;
+    background-image: linear-gradient(to right, #c93937 0%, rgba(240, 255, 255, 0) 70%),  url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-title {
+    margin: 0;
+    margin-bottom: 25px; 
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.hero-descr {
+    margin: 0;
+    margin-bottom: 34px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.hero-btn {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #42008d 0%, #0a004b 51%, #bb0000 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.hero-btn:hover {
+  background-position: right center;
+}
+
+.hero-secure{
+    color: #2e2e2ef5;
+    font-size: 11px;
+    margin-left: 20px;
+}
+
+.hero-secure-img{
+    width: 8px;
+}
+
+/*services*/
+.services-title {   /*заголовок*/
+    text-align: center;
     
 }
 
-.nav-list{
+.services-descr {   /*параграф-абзац*/
+    text-align: center;
+}
+
+.services-item {
+    flex-direction: column; /*меняем главную ось*/
+    align-items: center;    /*отцентруем*/
+    padding: 40px;
+    width: 270px;
+    border-radius: 3px; 
+    box-shadow: 10px 10px 20px  #cc1912;
+    transition: .5s;
+}
+
+.services-item:hover{
+    box-shadow: 0px 0px 5px #910000;
+}
+/* -------hero----------- */
+
+
+/* ---------contacts---------- */
+.contacts{
+    background-color
+}
+/* ---------contacts---------- */
+
+
+
+.services-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.services-item-icon {   /*отступ снизу иконки*/
+    margin-bottom: 25px;  
+}
+
+.services-item-title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.services-item-descr {
+    margin: 0;
+    text-align: center;  /*текст по центру*/
+}
+
+/*Article*/
+.articles-list {
+    flex-wrap: wrap;
+}
+.articles-item {
+    width: 570px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    outline: 1px solid #cfcfcf83;
+    /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
+}
+
+.articles-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+    
+}
+
+.blog-preview{
+    box-shadow: 10px 5px 5px #001e6494;
+    transition: .5s;
+}
+
+.blog-preview:hover{
+    box-shadow: 0px 0px 5px #001e6494;
+}
+
+.blog preview-image {
+    object-fit: cover;   /*чтобы картинка занимала всё место для нее отведенное, 
+    даже если картинка будет неправильной пропорции*/
+}
+
+.blog-preview-text {
+    padding: 30px;
+}
+
+.blog-preview-time {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.blog-preview-title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.blog-preview-descr {
+    margin: 0;
+}
+
+/*clients*/
+.clients-item {
+    flex-direction: column;
+    width: 370px;
+    padding: 50px 36px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    outline: 1px solid #cfcfcf83;
+    /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
+}
+
+.clients-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.clients-item-descr {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.clients-user {
+    margin-top: auto;
+}
+
+.clients-avatar {
+    flex-shrink: 0;
+    width: 67px;
+    margin-right: 17px;
+}
+
+.clients-name {
+    margin-bottom: 5px;
+}
+
+/*contacts*/
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-item {
+    flex-direction: column;
+    width: 370px;
+    /*outline: 1px solid coral; */
+}
+
+.contacts-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.contacts-item-caption {
+    margin-bottom: 30px;
+}
+
+.contacts-item-text {
+    margin: 0;
+}
+
+.contacts-item-link:not(:last-childs) {
+    margin-bottom: 5px;
+}
+
+/*footer*/
+.footer {
+    padding: 42px 0;
+}
+
+.footer-container {
     align-items: center;
-    margin-top: 10%;
+    justify-content: space-between;
 }
 
-.nav-list-item{
-    margin: 20px;
-    padding: 15px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background: #1d96d1;
-    color:azure;
-    font-size: 20px;
-    transition: 0.5s;
+.footer-left,
+.footer-right {
+    align-items: center;
 }
 
-.nav-list-item:hover{
-    box-shadow: #001220;
-    background: #1a6da3;
-    border-radius:74% 26% 83% 17% / 18% 65% 35% 82%;
-    font-size: x-large;
+.footer-logo {
+    margin-right: 25px;
 }
 
-.header-logo{
-    margin-right: auto;
-}
-
-.header-logo{
-    background-clip: text;
-    background: radial-gradient(circle at 70% , #04244a, #05274e, #093059, #0e3e6a00, #144e7f, #186297, #1c78b0, #1d8ec8, #1da2de, #1db2ef, #1cc0fb00, #1cc2ff00), url(/img/mpav_logo.jpg);
-    color: transparent; 
-    -webkit-background-clip: text;
-}
-
-.header-logo h2 {
-    font-size: 60px;
+.footer-item:not(:last-child) {
+    margin-right: 28px;
 }
 
 
+
+
+
+
+/* ----------FOOTER------------- */
+.footer{
+}
+/* ----------FOOTER------------- */
