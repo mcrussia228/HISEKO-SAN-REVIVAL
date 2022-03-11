@@ -127,13 +127,13 @@ a.nav-text:hover{
 
 
 #navbar {
-  background-color: yellow;
+  background-color: rgba(63, 0, 100, 0);
   position: fixed;
   top: -50px;
   width: 100%;
   display:block;
   transition: top 0.3s;
-  box-shadow: 0px 16px 24px -7px #000000;
+  /* box-shadow: 0px 16px 24px -7px #000000; */
 }
 
 #navbar a {
@@ -142,13 +142,22 @@ a.nav-text:hover{
   display: block;
   color: #0a004b;
   text-align: center;
-  padding: 10px;
-  text-decoration: none;
+  padding: 5px;
+  background-color: black;
+  border-radius:50px;
+  background: #8d0000;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
 
 #navbar a:hover {
-  background-color: #ff00004f;
-  color: black;
+    background-color: #ff00004f;
+    color: black;
+    background: #ff0000;
+    box-shadow:  5px 5px 10px #ff0000f8,
+    -5px -5px 40px #ff0101;
+
 }
 
 
@@ -260,14 +269,18 @@ a.nav-text:hover{
     margin-right: 30px;
 }
 
-.services-item-icon {   /*отступ снизу иконки*/
+.services-item-icon { 
+    margin-left: 25%;
+    margin-right: 25%;  /*отступ снизу иконки*/
     margin-bottom: 25px;  
     height: 100px;
     transition: .5s;
+    display: flow-root;
 }
 
+
 .services-item-icon:hover{
-    transform: scale(1.05)
+    transform: scale(0.95)
 }
 
 .services-item-title {
@@ -304,25 +317,30 @@ a.nav-text:hover{
     /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
 }
 
+.articles-title{
+    color:yellowgreen;
+}
+
+
 .articles-item:not(:nth-child(2n)) {
     margin-right: 30px;
     
 }
 
 .blog-preview{
-    box-shadow: 10px 5px 5px #8d020294;
+    box-shadow: 0px 0px 20px #8d020294;
     transition: .5s;
 }
 
 .blog-preview:hover{
-    box-shadow: 0px 0px 5px #ff990094;
+    box-shadow: 0px 0px 5px #00000094;
 }
 
 .preview-image{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius:;
+    border-radius: 3px;
 }
 
 .blog preview-image {
@@ -331,6 +349,7 @@ a.nav-text:hover{
 }
 
 .blog-preview-text {
+    color: yellowgreen;
     padding: 30px;
 }
 
