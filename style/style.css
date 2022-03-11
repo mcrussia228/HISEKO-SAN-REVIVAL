@@ -92,7 +92,7 @@ body {
     display: inline-flex;
 }
 a.nav-text{
-    margin: 10px;
+    margin: 5px;
     padding-left: 10px;
         padding-right: 10px;
     font-size: 1.5rem;
@@ -110,7 +110,7 @@ a.nav-text:hover{
 }
 
 .nav-logo{
-    font-size: 2em;
+    font-size: 1ю5em;
     margin-top: 10px;
     margin-right: auto;
     color: #fff;
@@ -235,7 +235,7 @@ a.nav-text:hover{
     padding: 40px;
     width: 270px;
     border-radius: 3px; 
-    box-shadow: 10px 10px 20px  #cc1912;
+    box-shadow: 0px 0px 20px  #cc1912;
     transition: .5s;
 }
 
@@ -262,16 +262,33 @@ a.nav-text:hover{
 
 .services-item-icon {   /*отступ снизу иконки*/
     margin-bottom: 25px;  
+    height: 100px;
+    transition: .5s;
+}
+
+.services-item-icon:hover{
+    transform: scale(1.05)
 }
 
 .services-item-title {
     margin: 0;
+    padding: 5px;
     margin-bottom: 15px;
+    color: yellowgreen;
+    text-align: center;
+    /* background: #000000; */
+    /* box-shadow: 0px 0px 22px rgb(5, 25, 136); */
 }
 
 .services-item-descr {
     margin: 0;
-    text-align: center;  /*текст по центру*/
+    padding: 5px;
+    color: yellowgreen;
+    text-align: center;
+    /* background: #000000; */
+    /* box-shadow: 0px 0px 22px rgb(5, 25, 136); */
+
+    
 }
 
 /*Article*/
@@ -320,6 +337,10 @@ a.nav-text:hover{
 .blog-preview-time {
     display: block;
     margin-bottom: 5px;
+}
+
+.articles-title{
+    text-align: center;
 }
 
 .blog-preview-title {
@@ -441,7 +462,9 @@ a.nav-text:hover{
     color: wheat;
 }
 
-
+.version{
+    color: greenyellow;
+}
 
 
 /* ----------------------- */
