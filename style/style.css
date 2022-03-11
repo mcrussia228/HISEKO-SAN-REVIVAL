@@ -110,7 +110,8 @@ a.nav-text:hover{
 }
 
 .nav-logo{
-    margin-top: 25px;
+    font-size: 2em;
+    margin-top: 10px;
     margin-right: auto;
     color: #fff;
     text-align: center;
@@ -121,8 +122,35 @@ a.nav-text:hover{
 }
 
 .menu{
-    margin-top: 30px;
+    margin-top: 50px;
 }
+
+
+#navbar {
+  background-color: yellow;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+  box-shadow: 0px 16px 24px -7px #000000;
+}
+
+#navbar a {
+  font-size: 20px;
+  float: left;
+  display: block;
+  color: #0a004b;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ff00004f;
+  color: black;
+}
+
 
 /*-----------header-------------*/
 
@@ -192,14 +220,16 @@ a.nav-text:hover{
 /*services*/
 .services-title {   /*заголовок*/
     text-align: center;
-    
+    margin: 1px;
 }
 
 .services-descr {   /*параграф-абзац*/
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .services-item {
+    margin-bottom: 150px;
     flex-direction: column; /*меняем главную ось*/
     align-items: center;    /*отцентруем*/
     padding: 40px;
@@ -249,6 +279,7 @@ a.nav-text:hover{
     flex-wrap: wrap;
 }
 .articles-item {
+    
     width: 570px;
     margin-bottom: 30px;
     border-radius: 3px;
@@ -262,12 +293,19 @@ a.nav-text:hover{
 }
 
 .blog-preview{
-    box-shadow: 10px 5px 5px #001e6494;
+    box-shadow: 10px 5px 5px #8d020294;
     transition: .5s;
 }
 
 .blog-preview:hover{
-    box-shadow: 0px 0px 5px #001e6494;
+    box-shadow: 0px 0px 5px #ff990094;
+}
+
+.preview-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius:;
 }
 
 .blog preview-image {
@@ -304,6 +342,7 @@ a.nav-text:hover{
     box-shadow:0px 0px 10px #f2ff00;
     /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
     transition: 0.5s;
+    margin-top: 200px;
 }
 
 .clients-item:hover{
@@ -317,6 +356,10 @@ a.nav-text:hover{
 .clients-item-descr {
     margin: 0;
     margin-bottom: 30px;
+}
+
+.clients-title{
+    text-align: center;
 }
 
 .clients-user {
@@ -334,6 +377,11 @@ a.nav-text:hover{
 }
 
 /*contacts*/
+
+.contacts-title{
+    margin-top: 300px;
+}
+
 .contacts-address {
     font-style: normal;
 }
@@ -362,6 +410,7 @@ a.nav-text:hover{
 
 /*footer*/
 .footer {
+    margin-top: 100px;
     padding: 42px 0;
     background: black;
 }
@@ -377,7 +426,7 @@ a.nav-text:hover{
 }
 
 .footer-logo {
-    margin-right: 25px;
+    width: 100px;
 }
 
 .footer-item:not(:last-child) {

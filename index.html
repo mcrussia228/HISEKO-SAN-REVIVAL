@@ -13,6 +13,14 @@
 </head>
 <body>
 
+<!-- двигающиеся меню -->
+<div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>  
+</div>
+<!-- двигающиеся меню -->
+
     <header>
         <div class="container">
             <div class="nav">
@@ -63,25 +71,25 @@
             </p>
             <ul class="list-reset services-items flex">
                 <li class="services-item flex">
-                    <img class="services-item-icon" src="img/serv1.svg" alt="icon">
+                    <img class="services-item-icon" src="img/arm-ico.png" alt="icon">
                     <h3 class="services-item-title">
-                        Your Legacy
+                        Arms
                     </h3>
                     <p class="services-item-descr">
                         山を主とした自然の眺めを、中国では山川、山林、山水などさまざまな名称でよんでいるが、
                     </p>
                 </li>
                 <li class="services-item flex">
-                    <img class="services-item-icon" src="img/serv2.svg" alt="icon">
+                    <img class="services-item-icon" src="img/icons8-cyber-100-2.png" alt="icon">
                     <h3 class="services-item-title">
-                        Your Health
+                        Head
                     </h3>
                     <p class="services-item-descr">
                         山を主とした自然の眺めを、中国では山川、山林、山水などさまざまな名称でよんでいるが、
                     </p>
                 </li>
                 <li class="services-item flex">
-                    <img class="services-item-icon" src="img/serv3.svg" alt="icon">
+                    <img class="services-item-icon" src="img/pozvon-ico.png" alt="icon">
                     <h3 class="services-item-title">
                         Funeral &amp;&nbsp;Memorial
                     </h3>
@@ -90,7 +98,7 @@
                     </p>
                 </li>
                 <li class="services-item flex">
-                    <img class="services-item-icon" src="img/serv4.svg" alt="icon">
+                    <img class="services-item-icon" src="img/icons8-body-100.png" alt="icon">
                     <h3 class="services-item-title">
                         Legal &amp;&nbsp;Financial
                     </h3>
@@ -108,7 +116,7 @@
             <ul class="list-reset articles-list flex">
                 <li class="articles-item">
                     <article class="blog-preview flex">
-                        <img src="img/blog-1.jpg" alt="blog photo 1" class="blog preview-image">
+                        <img src="img/icons8-счастливый-череп-100.png" alt="blog photo 1" class="blog preview-image">
                         <div class="blog-preview-text">
                             <time class="blog-preview-time" datetime="2022-02-26 14:36">
                                 15&nbsp;Nov 2021
@@ -124,7 +132,7 @@
                 </li>
                 <li class="articles-item">
                     <article class="blog-preview flex">
-                        <img src="img/blog-2.jpg" alt="blog photo 2" class="blog preview-image">
+                        <img src="img/icons8-счастливый-череп-100.png" alt="blog photo 2" class="blog preview-image">
                         <div class="blog-preview-text">
                             <time class="blog-preview-time" datetime="2022-02-26 14:36">
                                 29&nbsp;Nov 2021
@@ -140,7 +148,7 @@
                 </li>
                 <li class="articles-item">
                     <article class="blog-preview flex">
-                        <img src="img/blog-3.jpg" alt="blog photo 3" class="blog preview-image">
+                        <img src="img/icons8-счастливый-череп-100.png" alt="blog photo 3" class="blog preview-image">
                         <div class="blog-preview-text">
                             <time class="blog-preview-time" datetime="2022-02-26 14:36">
                                 28&nbsp;Nov 2021
@@ -156,7 +164,7 @@
                 </li>
                 <li class="articles-item">
                     <article class="blog-preview flex">
-                        <img src="img/blog-1.jpg" alt="blog photo 4" class="blog preview-image">
+                        <img src="img/icons8-счастливый-череп-100.png" alt="blog photo 4" class="blog preview-image">
                         <div class="blog-preview-text">
                             <time class="blog-preview-time" datetime="2022-02-26 14:36">
                                 11&nbsp;Dec 2021
@@ -291,10 +299,10 @@
     <div class="container flex footer-container">
         <div class="footer-left flex">
             <a href="#" class="footer-logo">
-                <img src="img/logo." alt="Logo">
+                <img src="img/logo-samurai.png" alt="Logo">
             </a>
             <small class="footer-copy">
-                Copyright ©2017. All Right Reserved
+                Copyright ©2022. T  E R P I & MPAV
             </small>
         </div>
         <div class="footer-right flex">
@@ -323,5 +331,23 @@
     </div>
     <div></div>
 </footer>
+
+
+<!-- scrolls-->
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+    }
+</script>
+<!-- scrolls-->
+
+
 </body>
 </html>
