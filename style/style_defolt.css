@@ -175,7 +175,7 @@ a.nav-text:hover{
 
 .portfolio-img img{ 
     border-radius: 5px;
-    width:290px;
+    width:400px;
     height: 300px;
 }
 
@@ -188,9 +188,8 @@ a.nav-text:hover{
 }
 
 img {
-    margin-bottom: 40px;
-    
-box-shadow: 0px 0px 10px #b7e100;
+    margin-bottom: 40px;  
+    box-shadow: 0px 0px 10px #b7e100;
 }
 
 .portfolio-text-text p {
