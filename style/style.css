@@ -62,7 +62,7 @@ body {
 body {
 	background: linear-gradient(90deg, #020c3c, #2d027e, #51015c);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease infinite;
 	height: 100vh;
 }
 
@@ -94,7 +94,7 @@ body {
 a.nav-text{
     margin: 5px;
     padding-left: 10px;
-        padding-right: 10px;
+    padding-right: 10px;
     font-size: 1.5rem;
     border-radius: 50px;
     background: #8d0000;
@@ -121,13 +121,35 @@ a.nav-text:hover{
     z-index: 4;
 }
 
+.logo-nav{
+    text-shadow: 0px 0px 3px white;
+    animation:  0.01s infinite alternate logo;
+    border-radius: 50px;
+}
+@keyframes logo {
+	0%{
+        text-shadow: 5px 0px 6px rgb(114, 114, 114);
+    }
+	25%{
+        tex-shadow: 4px 0px 0px #66666628;
+    }
+	30%{
+        text-shadow: 6px 0px 0px rgb(77, 77, 77);
+    }
+    100%{
+        text-shadow: 0px 0px 10px rgb(204, 204, 204);
+    }
+
+}
+
+
 .menu{
     margin-top: 50px;
 }
 
 
 #navbar {
-  background-color: rgba(63, 0, 100, 0);
+    background-color: rgba(63, 0, 100, 0);
   position: fixed;
   top: -50px;
   width: 100%;
@@ -149,6 +171,7 @@ a.nav-text:hover{
   margin-right: 10px;
   margin-left: 5px;
   margin-top: 10px;
+  text-shadow: 0px 0px 40px rgb(255, 0, 0);
 }
 
 #navbar a:hover {
@@ -228,13 +251,17 @@ a.nav-text:hover{
 
 /*services*/
 .services-title {   /*заголовок*/
+    font-size: 30pt;
     text-align: center;
     margin: 1px;
+    text-shadow: 0px 0px 2px #cc1912;
 }
 
 .services-descr {   /*параграф-абзац*/
+    font-size: 18pt;
     text-align: center;
     margin-bottom: 100px;
+    text-shadow: 0px 0px 5px #cc1912;
 }
 
 .services-item {
@@ -244,12 +271,12 @@ a.nav-text:hover{
     padding: 40px;
     width: 270px;
     border-radius: 3px; 
-    box-shadow: 0px 0px 20px  #cc1912;
+    box-shadow: 0px 0px 5px  #cc1912;
     transition: .5s;
 }
 
 .services-item:hover{
-    box-shadow: 0px 0px 5px #910000;
+    box-shadow: 0px 0px 20px #910000;
 }
 /* -------hero----------- */
 
@@ -302,6 +329,10 @@ a.nav-text:hover{
     /* box-shadow: 0px 0px 22px rgb(5, 25, 136); */
 
     
+}
+.services-item-title:hover,
+.services-item-descr:hover{
+    text-shadow: 0px 0px 10px yellowgreen;
 }
 
 /*Article*/
@@ -382,7 +413,8 @@ a.nav-text:hover{
     box-shadow:0px 0px 10px #f2ff00;
     /*outline: 1px solid coral; для того, чтобы мы могли визуально видеть границы*/
     transition: 0.5s;
-    margin-top: 200px;
+    margin-top: 20px;
+    color: rgb(158, 237, 0);
 }
 
 .clients-item:hover{
@@ -396,10 +428,12 @@ a.nav-text:hover{
 .clients-item-descr {
     margin: 0;
     margin-bottom: 30px;
+    color: yellowgreen;
 }
 
 .clients-title{
     text-align: center;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0) ;
 }
 
 .clients-user {
@@ -416,14 +450,22 @@ a.nav-text:hover{
     margin-bottom: 5px;
 }
 
+.clients{
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
 /*contacts*/
 
 .contacts-title{
-    margin-top: 300px;
+    text-align: center;
+    margin-top: 15x;
+    color: wheat;
 }
 
 .contacts-address {
     font-style: normal;
+    color: wheat;
 }
 
 .contacts-item {
@@ -484,15 +526,3 @@ a.nav-text:hover{
 .version{
     color: greenyellow;
 }
-
-
-/* ----------------------- */
-@-webkit-keyframes nav-logo {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-/* ----------------------- */
