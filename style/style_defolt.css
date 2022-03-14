@@ -35,12 +35,7 @@ img {
 body {
     background: rgb(0, 0, 0);
     min-width: 1200px;
-    font-family: 'Cyberpunk';
-}
-
-@font-face{
-    font-family: 'CyberpunkH1';
-    src: url(/fonts/Cyberpunk.ttf);
+    font-family: 'DotGothic16';
 }
 
 .list-reset {
@@ -99,7 +94,7 @@ a.nav-text:hover{
 }
 
 .nav-logo{
-    font-size: 1ю5em;
+    font-size: 1.5em;
     margin-top: 10px;
     margin-right: auto;
     color: #fff;
@@ -151,6 +146,7 @@ a.nav-text:hover{
 
 .logo-nav{
     text-shadow: 0px 0px 3px №ffffff5f;
+    
     animation:  0.01s infinite alternate logo;
 }
 @keyframes logo {
@@ -249,6 +245,7 @@ img {
 }
 
 .footer-copy{
+    margin-left: 20px;
     color: wheat;
 }
 
