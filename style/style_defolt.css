@@ -206,13 +206,12 @@ img {
     box-shadow: 0px 0px 10px #b7e100;
 }
 
-.portfolio-text-text p {
-    font-family: 'Cyberpunk';
+/* .portfolio-text-text p {
     /* word-break: break-all;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto; */
-}
+ 
 
 /* -------FOOTER-------- */
 .footer {

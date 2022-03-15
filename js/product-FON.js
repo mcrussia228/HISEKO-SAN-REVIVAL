@@ -8,7 +8,7 @@ VANTA.CLOUDS({
   backgroundColor: 0x0,
   skyColor: 0x0,
   cloudColor: 0x0,
-  cloudShadowColor: 0x8900b1,
+  cloudShadowColor: 0x14,
   sunColor: 0x0,
   sunGlareColor: 0x0,
   sunlightColor: 0x82006f
