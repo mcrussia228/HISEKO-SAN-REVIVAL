@@ -8,21 +8,36 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;1,200&display=swap"
+        rel="stylesheet">
     <title>ひせこさんの復活</title>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
 
 <!-- двигающиеся меню -->
 <div id="navbar">
-    <a href="#home">家</a>
-    <a href="#news">サービス</a>
-    <a href="#contact">連絡先</a>  
+    <a href="index.html">家</a>
+    <a href="product .html">サービス</a>
+    <a href="personal.html">連絡先</a>  
+    <a href="join as.html">連絡先</a>
 </div>
 <!-- двигающиеся меню -->
 
+
+<div id="loader">
+<img src="img/logo-samurai.png" alt="">
+</div>
+    
+    
+
     <header>
-        <div class="container">
+        <div class="container display:none;" id="myDiv" class="animate-bottom"">
             <div class="nav">
                 <div class="nav-logo">
                     <h1 class="logo-nav">ひせこさんの復活</h1>
@@ -107,7 +122,7 @@
 
                 <li class="services-item flex">
                     <a href="#">
-                        <img class="services-item-icon" src="img/icons8-body-100.png" alt="icon">
+                        <img class="services-item-icon services-item-icon-body" src="img/icons8-body-100.png" alt="icon">
                         <h3 class="services-item-title">
                             体 | body
                         </h3>
@@ -200,9 +215,7 @@
             <ul class="list-reset clients-list flex">
                 <li class="clients-item flex">
                     <p class="clients-item-descr">
-                        Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie
-                        consequat, vel illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan
-                        et&nbsp;iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
+                        「ひせこさんの復活」のチーム一同に心から感謝申し上げます。 そのようなフレンドリーなチーム。 みんなに感謝します！ マネージャーのオレシア、義肢装具士のニキータ。 そして、一般的に、すべてに感謝します！
                     </p>
                     <div class="clients-user flex">
                         <div class="clients-avatar">
@@ -213,16 +226,15 @@
                                 ジョンアームストロング
                             </div>
                             <span class="clients-post">
-                                お客様
+                                アブドゥラギモフ・アーメド
                             </span>
                         </div>
                     </div>
                 </li>
                 <li class="clients-item flex">
                     <p class="clients-item-descr">
-                        Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie
-                        consequat, vel illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan
-                        et&nbsp;iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
+                        会社「ひせこさんの復活」のスタッフ一同、フレンドリーで反応がいいと言いたいです。
+                        それらは100％動作します。 ありがとう。
                     </p>
                     <div class="clients-user flex">
                         <div class="clients-avatar">
@@ -233,16 +245,16 @@
                                 エリザベスマーティン
                             </div>
                             <span class="clients-post">
-                                お客様
+                                惑星間宇宙飛行
                             </span>
                         </div>
                     </div>
                 </li>
                 <li class="clients-item flex">
                     <p class="clients-item-descr">
-                        Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie
-                        consequat, vel illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan
-                        et&nbsp;iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
+                        みんな気に入った！
+                        良いプロテーゼ！
+                        チームは素晴らしいです！
                     </p>
                     <div class="clients-user flex">
                         <div class="clients-avatar">
@@ -253,7 +265,7 @@
                                 ロビン・サウトビー
                             </div>
                             <span class="clients-post">
-                                お客様
+                                さくらんぼ2本×2本5本半
                             </span>
                         </div>
                     </div>
@@ -276,7 +288,13 @@
                         Visit Us
                     </strong>
                     <p class="contacts-item-text">
-                        Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit.
+                    サイトの作成者に連絡するには連絡先：
+                    <p class="contacts-item-text">
+                     To contact the creator of the site:
+                    </p>
+                    <p class="contacts-item-text">
+                    Для связи с создателем сайта :
+                    </p>
                     </p>
                 </li>
                 <li class="contacts-item flex">
@@ -284,21 +302,21 @@
                         Call&nbsp;Us
                     </strong>
                     <a href="tel:+79876543210" class="contacts-item-link">
-                        +7 (987) 654-32-10
+                        +7 (987) 654-32-10#defolt
                     </a>
                     <a href="tel:+71234567890" class="contacts-item-link">
-                        +7 (123) 456-78-90
+                        +7 (123) 456-78-90#defolt
                     </a>
                 </li>
                 <li class="contacts-item flex">
                     <strong class="contacts-item-caption">
                         Email&nbsp;Us
                     </strong>
-                    <a href="mailto:example@example.com" class="contacts-item-link">
-                        example@example.com
+                    <a href="mailto:simsim.maksim.pro@yandex.ru" class="contacts-item-link">
+                        simsim.maksim.pro@yandex.ru
                     </a>
-                    <a href="mailto:support@example.com" class="contacts-item-link">
-                        support@example.com
+                    <a href="mailto:mcrussia223@gmail.com" class="contacts-item-link">
+                        mcrussia223@gmail.com
                     </a>
                 </li>
             </ul>
@@ -338,8 +356,6 @@
                 <li class="social-item"><a href="#" class="social-link social-link-mail"></a></li>
             </ul>
         </div>
-    </div>
-    <div>
         <p class="version">--v.beta--1:00.--15--</p>
     </div>
 </footer>
@@ -359,5 +375,22 @@
     }
 </script>
 <!-- scrolls-->
+
+<!-- PRELOAD -->
+<script>
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+<!-- PRELOAD -->
+
+
 </body>
 </html>

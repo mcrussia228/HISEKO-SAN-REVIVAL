@@ -1,5 +1,6 @@
 html {
    box-sizing: border-box;
+   overflow-x: hidden;
 }
 
 *,
@@ -9,10 +10,10 @@ html {
 }
 
 ::selection {
-background: #08e2ff; /* Safari */
+    background: #41016ba8; /* Safari */
 }
 ::-moz-selection {
-background: #0afdf1; /* Firefox */
+ background: #41016ba8; /* Firefox */
 }
 
 a {
@@ -31,13 +32,19 @@ img {
     max-width: 100%;
 }
 
+
+
 body {
     min-width: 1200px;
-    font-family: 'DotGothic16';
+    /* font-family: 'DotGothic16'; */
+    font-family:  'DotGothic16';
+    font-family:  'JetBrains Mono', monospace;
 }
 
+
+
 .list-reset {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     list-style: none;  /*отменяет маркеры*/
 }
@@ -57,6 +64,58 @@ body {
     padding: 0 15px;
     margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
 }
+
+/* loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  border-top: 16px solid rgb(235, 0, 0);
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  box-shadow: 0px 0px 20px red;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/* loader */
 
 /* ---------ANIMATE-FON---------- */
 body {
@@ -296,18 +355,32 @@ a.nav-text:hover{
     margin-right: 30px;
 }
 
+.services-item{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.378), #0000);
+
+}
+
 .services-item-icon { 
     margin-left: 25%;
     margin-right: 25%;  /*отступ снизу иконки*/
     margin-bottom: 25px;  
     height: 100px;
-    transition: .5s;
     display: flow-root;
+    box-shadow: 0px 0px 10px rgba(153, 205, 50, 0) inset;
+    transition: .5s;
+    
+}
+
+.services-item-icon-body{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 0px;
+    
 }
 
 
 .services-item-icon:hover{
-    transform: scale(0.95)
+    transform: scale(0.95);
 }
 
 .services-item-title {
@@ -359,12 +432,14 @@ a.nav-text:hover{
 }
 
 .blog-preview{
+    background: #000000;
     box-shadow: 0px 0px 20px #8d020294;
     transition: .5s;
 }
 
 .blog-preview:hover{
     box-shadow: 0px 0px 5px #00000094;
+    background: linear-gradient(135deg, #000000, rgba(0, 0, 0, 0));
 }
 
 .preview-image{
@@ -404,6 +479,7 @@ a.nav-text:hover{
 
 /*clients*/
 .clients-item {
+    background: black;
     flex-direction: column;
     width: 370px;
     padding: 50px 36px;
@@ -429,6 +505,7 @@ a.nav-text:hover{
     margin: 0;
     margin-bottom: 30px;
     color: yellowgreen;
+    text-shadow: 0px 0px 10px yellowgreen;
 }
 
 .clients-title{
@@ -488,6 +565,10 @@ a.nav-text:hover{
 
 .contacts-item-link:not(:last-childs) {
     margin-bottom: 5px;
+}
+
+.join-us{
+    margin-top: 20px;
 }
 
 /*footer*/
