@@ -178,7 +178,12 @@ a.nav-text:hover{
 }
 
 #main{
-    z-index: auto;
+    
+    position: relative;
+    z-index: 1;
+    border-bottom-width: 20px;
+    bottom: 20px;
+
 }
 
 
@@ -278,6 +283,7 @@ p, h3 {
 
 .duy-cards{
     margin-top: 40px;
+    margin-bottom: 0px;
     display: inline-flex;
 }
 
