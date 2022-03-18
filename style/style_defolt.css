@@ -75,7 +75,7 @@ body {
     background: black;
 }
 
-a.nav-text{
+a.nav-text:not(.active){
     margin: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -87,7 +87,7 @@ a.nav-text{
     transition: 0.5s;
 }
 
-a.nav-text:hover{
+a.nav-text:hover:not(.active){
     background: #d0ff00;
     box-shadow:  0px 0px 10px #5eff00f8,
     0px 0px 40px #59f300;
@@ -103,6 +103,17 @@ a.nav-text:hover{
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     z-index: 4;
+}
+
+.active{
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    background: #d0ff00;
+    box-shadow:  0px 0px 10px #5eff00f8,
+    0px 0px 10px #59f300;
 }
 
 .menu{

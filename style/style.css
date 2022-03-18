@@ -32,16 +32,15 @@ img {
     max-width: 100%;
 }
 
-
-
 body {
     min-width: 1200px;
     /* font-family: 'DotGothic16'; */
     font-family:  'DotGothic16';
-    font-family:  'JetBrains Mono', monospace;
+    background: linear-gradient(90deg, #020c3c, #2d027e, #51015c);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
 }
-
-
 
 .list-reset {
     margin: 0px;
@@ -71,24 +70,24 @@ body {
   left: 50%;
   top: 50%;
   z-index: 1;
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: 300px;
   margin: -76px 0 0 -76px;
   border: 16px solid rgb(0, 0, 0);
   border-radius: 50%;
   border-top: 16px solid rgb(235, 0, 0);
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
   box-shadow: 0px 0px 20px red;
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% { -webkit-transform: rotate(-90deg); }
+  100% { -webkit-transform: rotate(60deg); }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
+  0% { transform: rotate(-120deg); }
   100% { transform: rotate(360deg); }
 }
 
@@ -114,17 +113,11 @@ body {
 #myDiv {
   display: none;
   text-align: center;
+  
 }
 /* loader */
 
 /* ---------ANIMATE-FON---------- */
-body {
-	background: linear-gradient(90deg, #020c3c, #2d027e, #51015c);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
-}
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -139,7 +132,15 @@ body {
 /* ---------ANIMATE-FON---------- */
 
 
-
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
 
 /*-----------header-------------*/
 .nav{
@@ -150,7 +151,7 @@ body {
 .nav-menu{
     display: inline-flex;
 }
-a.nav-text{
+a.nav-text:not(.active){
     margin: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -162,10 +163,23 @@ a.nav-text{
     transition: 0.5s;
 }
 
-a.nav-text:hover{
+a.nav-text:hover:not(.active){
     background: #ff0000;
     box-shadow:  5px 5px 10px #ff0000f8,
     -5px -5px 40px #ff0101;
+}
+
+.active{
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    background: #ff0000;
+     box-shadow:  0px 0px 10px #ff0000;
+    pointer-events: none; 
+      cursor: default; 
+    
 }
 
 .nav-logo{
@@ -241,7 +255,6 @@ a.nav-text:hover{
     -5px -5px 40px #ff0101;
 
 }
-
 
 /*-----------header-------------*/
 
@@ -340,10 +353,6 @@ a.nav-text:hover{
 /* -------hero----------- */
 
 
-/* ---------contacts---------- */
-.contacts{
-    background-color:1;
-}
 /* ---------contacts---------- */
 
 .services{

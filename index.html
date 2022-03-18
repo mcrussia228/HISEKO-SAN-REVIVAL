@@ -18,10 +18,9 @@
         rel="stylesheet">
     <title>ひせこさんの復活</title>
 </head>
-<body onload="myFunction()" style="margin:0;">
-
+<body onload="myFunction()">
 <!-- двигающиеся меню -->
-<div id="navbar">
+<div id="navbar" class="unselectable ">
     <a href="index.html">家</a>
     <a href="product .html">サービス</a>
     <a href="personal.html">連絡先</a>  
@@ -33,19 +32,17 @@
 <div id="loader">
 <img src="img/logo-samurai.png" alt="">
 </div>
-    
-    
-
+<div  id="myDiv">
     <header>
-        <div class="container display:none;" id="myDiv" class="animate-bottom"">
+        <div class="container "  class="animate-bottom">
             <div class="nav">
                 <div class="nav-logo">
-                    <h1 class="logo-nav">ひせこさんの復活</h1>
+                    <h1 class="logo-nav unselectable">ひせこさんの復活</h1>
                     <!-- <img src="img/logo.png" alt=""> -->
                 </div>
                 <div class="menu">
-                    <ul class="nav-menu">
-                        <li class="nav-menu-list"><a href="index.html" class="nav-text">家</a></li>              <!-- домой -->
+                    <ul class="nav-menu unselectable">
+                        <li class="nav-menu-list"><a href="index.html" class="active nav-text">家</a></li>              <!-- домой -->
                         <li class="nav-menu-list"><a href="product .html" class="nav-text">製品</a></li>         <!-- product -->
                         <li class="nav-menu-list"><a href="personal.html" class="nav-text">個人的</a></li>       <!-- personal -->
                         <li class="nav-menu-list"><a href="join as.html" class="nav-text">として参加する</a></li> <!-- Join us -->
@@ -55,10 +52,10 @@
         </div>
     </header>
     <main>
-<main class="main">
+<main class="main"  >
     <section id="hero" class="hero">
         <div class="container">
-            <div class="hero-content flex">
+            <div class="hero-content flex unselectable">
                 <h1 class="hero-title">
                     新世代の義肢の購入、設置、修理のためのサービスを提供するサイト
                 </h1>
@@ -74,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section id="services" class="services section-offset">
+    <section id="services" class="services section-offset unselectable">
         <div class="container">
             <h2 class="section title services-title">
                 未来の最高の義肢のサイトへようこそ
@@ -135,7 +132,7 @@
 
         </div>
     </section>
-    <section id="articles" class="articles section-offset">
+    <section id="articles" class="articles section-offset unselectable">
         <div class="container">
             <h2 class="section-title articles-title">
                 スタッフ
@@ -207,7 +204,7 @@
             </ul>
         </div>
     </section>
-    <section id="clients" class="clients section-offset">
+    <section id="clients" class="clients section-offset unselectable">
         <div class="container">
             <h2 class="section-title clients-title">
                 クライアント
@@ -234,7 +231,7 @@
                 <li class="clients-item flex">
                     <p class="clients-item-descr">
                         会社「ひせこさんの復活」のスタッフ一同、フレンドリーで反応がいいと言いたいです。
-                        それらは100％動作します。 ありがとう。
+                        それらは100 動作します。 ありがとう。
                     </p>
                     <div class="clients-user flex">
                         <div class="clients-avatar">
@@ -276,7 +273,7 @@
     <section id="contacts" class="contacts section-offset">
         
 </main>
-<footer class="footer">
+<footer class="footer unselectable" >
     <div class="container">
         <h2 class="section-title contacts-title">
             Contacts
@@ -337,16 +334,16 @@
             <nav class="footer-nav">
                 <ul class="list-reset footer-list flex">
                     <li class="footer-item">
-                        <a href="#" target="_blank" class="footer-link">About Us</a>
+                        <a href="#" target="_blank VK_blank" class="footer-link">VK</a>
                     </li>
                     <li class="footer-item">
-                        <a href="#" target="_blank" class="footer-link">Contact Us</a>
+                        <a href="#" target="_blank inst_blabk" class="footer-link">INSTAGRAM</a>
                     </li>
-                    <li class="footer-item">
+                    <!-- <li class="footer-item">
                         <a href="#" target="_blank" class="footer-link">Privacy Policy</a>
                     </li>
                     <li class="footer-item">
-                        <a href="#" target="_blank" class="footer-link">Terms Condition</a>
+                        <a href="#" target="_blank" class="footer-link">Terms Condition</a> -->
                     </li>
                 </ul>
             </nav>
@@ -357,10 +354,10 @@
                 <li class="social-item"><a href="#" class="social-link social-link-mail"></a></li>
             </ul>
         </div>
-        <p class="version">--v.beta--0:00.--16--</p>
+        <p class="version">--v.beta--7:30.--18--</p>
     </div>
 </footer>
-
+</div>
 
 <!-- scrolls-->
 <script>
@@ -391,6 +388,7 @@
     }
 </script>
 <!-- PRELOAD -->
+
 
 
 </body>
