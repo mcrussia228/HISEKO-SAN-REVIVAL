@@ -3,10 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;1,200&display=swap"
+        rel="stylesheet">
+    <title>ひせこさんの復活</title>
 </head>
-<body>
-    ##########test############
+<body onload="myFunction()" style="margin:0;">
+
+<!-- двигающиеся меню -->
+<div id="navbar">
+    <a href="index.html">家</a>
+    <a href="product .html">サービス</a>
+    <a href="personal.html">連絡先</a>  
+    <a href="join as.html">連絡先</a>
+</div>
+<!-- двигающиеся меню -->
+
+
+<div id="loader">
+<img src="img/logo-samurai.png" alt="">
+</div>
+    
+    
+
+    <header>
+        <div class="container display:none;" id="myDiv" class="animate-bottom"">
+            <div class="nav">
+                <div class="nav-logo">
+                    <h1 class="logo-nav">ひせこさんの復活</h1>
+                    <!-- <img src="img/logo.png" alt=""> -->
+                </div>
+                <div class="menu">
+                    <ul class="nav-menu">
+                        <li class="nav-menu-list"><a href="index.html" class="nav-text">家</a></li>              <!-- домой -->
+                        <li class="nav-menu-list"><a href="product .html" class="nav-text">製品</a></li>         <!-- product -->
+                        <li class="nav-menu-list"><a href="personal.html" class="nav-text">個人的</a></li>       <!-- personal -->
+                        <li class="nav-menu-list"><a href="join as.html" class="nav-text">として参加する</a></li> <!-- Join us -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+<main class="main">
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content flex">
+                <h1 class="hero-title">
+                    新世代の義肢の購入、設置、修理のためのサービスを提供するサイト
+                </h1>
+                <p class="hero-descr">
+                未来の最高の義肢のサイトへようこそ 私たちのデバイスとデバイスはすべて生命体です
+                </p>
+                <button class="btn-reset btn hero-btn">
+                    30日間の無料トライアル
+                </button>
+                <span class="hero-secure">
+                    <img src="img/secure.png" class="hero-secure-img" alt=""> SSL secured connection
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services section-offset">
+        <div class="container">
+            <h2 class="section title services-title">
+                未来の最高の義肢のサイトへようこそ
+            </h2>
+            <p class="section-descr services-descr" >
+            私たちのデバイスと機器はすべて生命体です
+            </p>
+
+            <ul class="list-reset services-items flex">
+                <li class="services-item flex" >
+                    <a  href="#">
+                        <img class="services-item-icon" src="img/arm-ico.png" alt="icon" >
+                        <h3 class="services-item-title" >
+                            手 | Arms
+                        </h3>
+                        <p class="services-item-descr" >
+                            通常の家事から直接手からロケットを発射するまで、膨大な機能を備えた新世代の義手を豊富に取り揃えています。
+                        </p>
+                    </a>
+                </li>
+
+                <li class="services-item flex">
+                    <a href="#">
+                        <img class="services-item-icon" src="img/icons8-cyber-100-2.png" alt="icon">
+                        <h3 class="services-item-title">
+                            頭 | Head
+                        </h3>
+                        <p class="services-item-descr">
+                            ヘッドインプラント、ブレインチップなどは、数時間以内にスペシャリストによって接続およびインストールされます
+                        </p>
+                    </a>    
+                </li>
+
+                <li class="services-item flex">
+                    <a href="#">
+                        <img class="services-item-icon" src="img/pozvon-ico.png" alt="icon">
+                        <h3 class="services-item-title">
+                        脊椎 | spine
+                        </h3>
+                        <p class="services-item-descr">
+                            激しい運動による腰痛にうんざりしていませんか？ その後、当社は脊髄接続を備えた最軽量かつ最強の人工脊椎を提供します
+                        </p>
+                    </a>
+                </li>
+
+                <li class="services-item flex">
+                    <a href="#">
+                        <img class="services-item-icon services-item-icon-body" src="img/icons8-body-100.png" alt="icon">
+                        <h3 class="services-item-title">
+                            体 | body
+                        </h3>
+                        <p class="services-item-descr">
+                            あなたから本物のサイボーグを作ることで、外臓器と内臓全体を改善することも可能です。
+                    </a>
+                 </li>
+            </ul>
+
+
+        </div>
+    </section>
+    <section id="articles" class="articles section-offset">
+        <div class="container">
+            <h2 class="section-title articles-title">
+                スタッフ
+            </h2>
+            <ul class="list-reset articles-list flex">
+                <li class="articles-item">
+                    <article class="blog-preview flex">
+                        <img src="img/ico/consyltant.ico" alt="blog photo 1" class="blog preview-image">
+                        <div class="blog-preview-text">
+                            <time class="blog-preview-time" datetime="2022-02-26 14:36">
+                                15&nbsp;Nov 2145
+                            </time>
+                            <h3 class="blog-preview-title">
+                                コンサルタント
+                            </h3>
+                            <p class="blog-preview-descr">
+                                彼からあなたは迅速な応答を受け取り、あなたのすべての質問に対する答えを得るでしょう。y
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li class="articles-item">
+                    <article class="blog-preview flex">
+                        <img src="img/ico/programmer.ico" alt="blog photo 2" class="blog preview-image">
+                        <div class="blog-preview-text">
+                            <time class="blog-preview-time" datetime="2022-02-26 14:36">
+                                29&nbsp;Nov 2141
+                            </time>
+                            <h3 class="blog-preview-title">
+                                デベロッパー
+                            </h3>
+                            <p class="blog-preview-descr">
+                                彼の分野の専門家であり、ある開発は別の開発よりも優れています
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li class="articles-item">
+                    <article class="blog-preview flex">
+                        <img src="img/ico/meh-programmer.ico" alt="blog photo 3" class="blog preview-image">
+                        <div class="blog-preview-text">
+                            <time class="blog-preview-time" datetime="2022-02-26 14:36">
+                                28&nbsp;Nov 2141
+                            </time>
+                            <h3 class="blog-preview-title">
+                                コンサルティング
+                            </h3>
+                            <p class="blog-preview-descr">
+                                あらゆるニーズに合わせてプロテーゼをプログラムおよび選択します
+                        </div>
+                    </article>
+                </li>
+                <li class="articles-item">
+                    <article class="blog-preview flex">
+                        <img src="img/ico/hiryrg.ico" alt="blog photo 4" class="blog preview-image">
+                        <div class="blog-preview-text">
+                            <time class="blog-preview-time" datetime="2022-02-26 14:36">
+                                11&nbsp;Dec 2141
+                            </time>
+                            <h3 class="blog-preview-title">
+                                主任外科医
+                            </h3>
+                            <p class="blog-preview-descr">
+                                若いが非常に才能が若いが非常に才能が若いが非常に才能が
+                            </p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="clients" class="clients section-offset">
+        <div class="container">
+            <h2 class="section-title clients-title">
+                クライアント
+            </h2>
+            <ul class="list-reset clients-list flex">
+                <li class="clients-item flex">
+                    <p class="clients-item-descr">
+                        「ひせこさんの復活」のチーム一同に心から感謝申し上げます。 そのようなフレンドリーなチーム。 みんなに感謝します！ マネージャーのオレシア、義肢装具士のニキータ。 そして、一般的に、すべてに感謝します！
+                    </p>
+                    <div class="clients-user flex">
+                        <div class="clients-avatar">
+                            <img src="img/client-1.png" alt="John Armstrong">
+                        </div>
+                        <div class="clients-text">
+                            <div class="clients-name">
+                                ジョンアームストロング
+                            </div>
+                            <span class="clients-post">
+                                アブドゥラギモフ・アーメド
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="clients-item flex">
+                    <p class="clients-item-descr">
+                        会社「ひせこさんの復活」のスタッフ一同、フレンドリーで反応がいいと言いたいです。
+                        それらは100％動作します。 ありがとう。
+                    </p>
+                    <div class="clients-user flex">
+                        <div class="clients-avatar">
+                            <img src="img/client-2.png" alt="Elizabeth Martin">
+                        </div>
+                        <div class="clients-text">
+                            <div class="clients-name">
+                                エリザベスマーティン
+                            </div>
+                            <span class="clients-post">
+                                惑星間宇宙飛行
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="clients-item flex">
+                    <p class="clients-item-descr">
+                        みんな気に入った！
+                        良いプロテーゼ！
+                        チームは素晴らしいです！
+                    </p>
+                    <div class="clients-user flex">
+                        <div class="clients-avatar">
+                            <img src="img/client-3.png" alt="Robin Soutby">
+                        </div>
+                        <div class="clients-text">
+                            <div class="clients-name">
+                                ロビン・サウトビー
+                            </div>
+                            <span class="clients-post">
+                                さくらんぼ2本×2本5本半
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contacts" class="contacts section-offset">
+        
+</main>
+<footer class="footer">
+    <div class="container">
+        <h2 class="section-title contacts-title">
+            Contacts
+        </h2>
+        <address class="contacts-address">
+            <ul class="list-reset contacts-list flex">
+                <li class="contacts-item flex">
+                    <strong class="contacts-item-caption">
+                        Visit Us
+                    </strong>
+                    <p class="contacts-item-text">
+                    サイトの作成者に連絡するには連絡先：
+                    <p class="contacts-item-text">
+                     To contact the creator of the site:
+                    </p>
+                    <p class="contacts-item-text">
+                    Для связи с создателем сайта :
+                    </p>
+                    </p>
+                </li>
+                <li class="contacts-item flex">
+                    <strong class="contacts-item-caption">
+                        Call&nbsp;Us
+                    </strong>
+                    <a href="tel:+79876543210" class="contacts-item-link">
+                        +7 (987) 654-32-10#defolt
+                    </a>
+                    <a href="tel:+71234567890" class="contacts-item-link">
+                        +7 (123) 456-78-90#defolt
+                    </a>
+                </li>
+                <li class="contacts-item flex">
+                    <strong class="contacts-item-caption">
+                        Email&nbsp;Us
+                    </strong>
+                    <a href="mailto:simsim.maksim.pro@yandex.ru" class="contacts-item-link">
+                        simsim.maksim.pro@yandex.ru
+                    </a>
+                    <a href="mailto:mcrussia223@gmail.com" class="contacts-item-link">
+                        mcrussia223@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </div>
+    </section>
+    <section id="join-us" class="join-us">
+    <div class="container flex footer-container">
+        <div class="footer-left flex">
+            <a href="#" class="footer-logo">
+                <img src="img/logo-samurai.png" alt="Logo">
+            </a>
+            <small class="footer-copy">
+                Copyright ©2022. T  E R P I & MPAV
+            </small>
+        </div>
+        <div class="footer-right flex">
+            <nav class="footer-nav">
+                <ul class="list-reset footer-list flex">
+                    <li class="footer-item">
+                        <a href="#" target="_blank" class="footer-link">About Us</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" target="_blank" class="footer-link">Contact Us</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" target="_blank" class="footer-link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" target="_blank" class="footer-link">Terms Condition</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="list-reset social flex">
+                <li class="social-item"><a href="#" class="social-link social-link-tw"></a></li>
+                a
+                <li class="social-item"><a href="#" class="social-link social-link-linkedin"></a></li>
+                <li class="social-item"><a href="#" class="social-link social-link-mail"></a></li>
+            </ul>
+        </div>
+        <p class="version">--v.beta--0:00.--16--</p>
+    </div>
+</footer>
+
+
+<!-- scrolls-->
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+    }
+</script>
+<!-- scrolls-->
+
+<!-- PRELOAD -->
+<script>
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+<!-- PRELOAD -->
+
+
 </body>
 </html>
