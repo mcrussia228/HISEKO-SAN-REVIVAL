@@ -317,6 +317,43 @@ p, h3 {
 
 /* -------main*cards-------- */
 
+/* ------------------------services ---------------------- */
+.previu-services{
+    background: rgb(75, 7, 97);
+    height: 45px;
+}
+
+.previu-services h3{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.4em;
+    text-shadow: 0px 0px 10px #e100ff;
+}
+
+.toggle-wrap-servises{
+    padding-bottom: 30px;
+    background: linear-gradient(45deg, #000000, #0c0021, #000000);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+/* ---------ANIMATE-FON---------- */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* ---------ANIMATE-FON---------- */
+.servises-cards{
+    background: royalblue;
+}
+
+/* ------------------------services ---------------------- */
 
 /*contacts*/
 
@@ -359,7 +396,7 @@ p, h3 {
 
 /*footer*/
 .footer {
-    margin-top: 0;
+    margin-top: 600px;
     padding: 42px 0;
     background: black;
 }
