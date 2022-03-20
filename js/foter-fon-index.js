@@ -1,0 +1,21 @@
+VANTA.BIRDS({
+  el: "#footer",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 1920.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x0,
+  color1: 0xb400ff,
+  color2: 0xff000e,
+  colorMode: "lerp",
+  birdSize: 1.50,
+  wingSpan: 40.00,
+  speedLimit: 3.00,
+  separation: 1.00,
+  alignment: 100.00,
+  cohesion: 38.00,
+  quantity: 4.00
+})
