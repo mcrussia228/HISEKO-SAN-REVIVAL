@@ -244,6 +244,7 @@ p, h3 {
 }
 
 .title {
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -253,6 +254,7 @@ p, h3 {
 }
 
 .description {
+    text-align: center;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -264,10 +266,12 @@ p, h3 {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .toggle-buy,
 .toggle-info {
+    text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -276,6 +280,7 @@ p, h3 {
 
 
 .toggle-buy {
+    text-align: center;
     margin-bottom: 30px;
   display: block;
   width: 134px;
@@ -293,6 +298,7 @@ p, h3 {
     }
 
 .toggle-info {
+    
   display: block;
   margin-left: 29px;
   color: #692aa9fd;
@@ -302,6 +308,7 @@ p, h3 {
 
 
 .duy-cards{
+    
     margin-top: 40px;
     margin-bottom: 0px;
     display: inline-flex;
@@ -353,6 +360,14 @@ p, h3 {
     background: royalblue;
 }
 
+
+.shadow-cards{
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+    .shadow-cards:hover{
+        box-shadow: 0px 0px 20px #ffff;
+    }
 /* ------------------------services ---------------------- */
 
 /*contacts*/
