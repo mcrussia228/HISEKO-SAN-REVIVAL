@@ -12,7 +12,7 @@ VANTA.BIRDS({
   color2: 0xff000e,
   colorMode: "lerp",
   birdSize: 1.50,
-  wingSpan: 40.00,
+  wingSpan: 4.00,
   speedLimit: 3.00,
   separation: 1.00,
   alignment: 100.00,
