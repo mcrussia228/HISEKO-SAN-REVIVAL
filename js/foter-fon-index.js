@@ -17,5 +17,5 @@ VANTA.BIRDS({
   separation: 1.00,
   alignment: 100.00,
   cohesion: 38.00,
-  quantity: 4.00
+  quantity: 1.00
 })
