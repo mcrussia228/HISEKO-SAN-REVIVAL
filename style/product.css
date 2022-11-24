@@ -200,7 +200,7 @@ a.nav-text:hover:not(.active){
 #main{
     
     position: relative;
-    z-index: 1;
+    z-index: -1;
     border-bottom-width: 20px;
     bottom: 20px;
 
@@ -411,7 +411,7 @@ p, h3 {
 
 /*footer*/
 .footer {
-    margin-top: 600px;
+    margin-top: 35%;
     padding: 42px 0;
     background: black;
 }
@@ -428,20 +428,22 @@ p, h3 {
 
 .footer-logo {
     width: 100px;
+    height: 100px;
 }
 
 .footer-item:not(:last-child) {
     margin-right: 28px;
 }
 
-.footer-link{
+.footer-link {
     color: wheat;
 }
 
-.footer-copy{
+.footer-copy {
+    margin-left: 20px;
     color: wheat;
 }
 
-.version{
+.version {
     color: greenyellow;
 }

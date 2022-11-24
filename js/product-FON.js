@@ -1,15 +1,13 @@
-VANTA.CLOUDS({
-  el: "#wrap",
+VANTA.TRUNK({
+  el: "main",
   mouseControls: true,
   touchControls: true,
-  gyroControls: true,
+  gyroControls: false,
   minHeight: 200.00,
   minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x9b3554,
   backgroundColor: 0x0,
-  skyColor: 0x0,
-  cloudColor: 0x0,
-  cloudShadowColor: 0x14,
-  sunColor: 0x0,
-  sunGlareColor: 0x0,
-  sunlightColor: 0x82006f
+  chaos: 10.00
 })
